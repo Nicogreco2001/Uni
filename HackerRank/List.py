@@ -4,7 +4,7 @@ for a in range(N):
     in_put=input().split()
     command=in_put[0]
     if command == "insert":
-        R.insert(int(in_put[1]),int(in_put[2])
+        R.insert(int(in_put[1]),int(in_put[2]))
     if command == "remove":
         R.remove(int(in_put[1]))
     if command == "append":
@@ -12,7 +12,7 @@ for a in range(N):
     if command == "sort":
         R.sort()
     if command == "pop":
-        R.pop(len(R))
+        R.pop()
     if command == "reverse":
         R.reverse()
     if command == "print":
