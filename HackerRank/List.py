@@ -2,5 +2,6 @@ N = int(input())
 x=[]
 x=input()
 print(x.split())
-#supergayskdjas;
+#mi taglio le palle
+
 
