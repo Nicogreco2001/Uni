@@ -19,4 +19,3 @@ for i in B:
         print(*sol[i])
     else:
         print(-1)
-        
