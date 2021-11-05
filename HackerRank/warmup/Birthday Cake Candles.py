@@ -8,6 +8,3 @@ def birthdayCakeCandles(candles):
         elif a == max:
             count += 1
     return count
-
-
-e
