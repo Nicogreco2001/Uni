@@ -1,16 +1,13 @@
 def insertionSort1(arr):
-    n = 0
-    indx = 0
-    while n < len(arr):
-        if n != 0 and arr[n] < arr[n-1] and arr[n] > arr[n-1]:
-            indx = n
+    arr = [2, 3, 4, 5, 6, 7, 8, 9, 10, 1]
+    n = len(arr)
+    num = arr[n - 1]
+    for j in range(len(arr)-2, -1, -1):
+        if arr[j] < num:
+            arr[j+ 1] = num
             break
-        elif n != len(arr) and arr[n] > arr[n+1] and arr[n] > arr[n-1]:
-            indx = n + 1
-            break
-        else:
-            n += 1
-    print(indx, arr[indx])
-
-lista = [1,2,8,3,4,5,6,7,9]
-insertionSort1(lista)
+        arr[j+1] = arr[j]
+    if arr[0] > num:
+        arr[0] = num
+    print(arr)
+       
