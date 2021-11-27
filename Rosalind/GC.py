@@ -4,9 +4,8 @@ n = 1
 dnaseq = {}
 while n < len(list):
     list[n] = list[n].replace('\n', '')
-    dnaseq[list[n][:14]] = list[n][14:]
+    dnaseq[list[n][:13]] = list[n][13:]
     n += 1
-
 # opened the txt file and create a dictonary with string label as key and 
 # the dna sequence as value
 
