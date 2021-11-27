@@ -1,3 +1,5 @@
+f = open('Rosalind/rosalind_hamm.txt').read()
+s,t = f.split()
 n = 0
 distance = 0
 while n < len(s):
