@@ -1,6 +1,16 @@
 f = open('Rosalind/rosalind_gc.txt').read()
-a = list(f.split('>'))
+list = list(f.split('>'))
+n = 1
+dnaseq = {}
+while n < len(list):
+    list[n] = list[n].replace('\n', '')
+    dnaseq[list[n][:14]] = list[n][14:]
+    n += 1
 
+# opened the txt file and create a dictonary with string label as key and 
+# the dna sequence as value
+
+# define so the function giving the CG content
 def CGperc(string):
     dic = {'A':0, 'C':0, 'G':0, 'T':0}
 
@@ -17,4 +27,15 @@ def CGperc(string):
     return perc
 
 
-print(a)
+# substitute each dna string in the dictonary with its CG content
+for a in dnaseq:
+    dnaseq[a] = CGperc(dnaseq[a])
+
+# find the biggest
+st_name = ''
+CG_content = 0
+for a in dnaseq:
+    if dnaseq[a] > CG_content:
+        CG_content = dnaseq[a]
+        st_name = a
+print(st_name, '\n', CG_content)
