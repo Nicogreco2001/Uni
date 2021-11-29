@@ -10,8 +10,9 @@ n = 0
 sol = []
 while n < (len(f)-3):
     r_frame = f[n:n+3]
-    sol.append(dic[r_frame])
     if dic[r_frame] != 'Stop':
         sol.append(dic[r_frame])
+    else:
+        break
     n += 3
 print(''.join(sol))
