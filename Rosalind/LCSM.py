@@ -8,7 +8,8 @@ def find_sub_in_list(substring, list):
     else:
         return False
 
-f = open(r'Rosalind/rosalind_lcsm.txt').read()
+
+f = open(r'C:\Users\nicco\Desktop\Uni\Rosalind\rosalind_lcsm.txt').read()
 list = list(f.split('>'))
 n = 1
 dnaseq = []
@@ -19,7 +20,7 @@ while n < len(list):
 
 str = dnaseq.pop(0)
 
-n = 3
+n = 1
 m = 0
 longer_seq = ''
 while (m + n) < len(str):
@@ -29,5 +30,5 @@ while (m + n) < len(str):
         longer_seq = sub
         n += 1
     else:
-        m += n
+        m += 1
 print(longer_seq)
