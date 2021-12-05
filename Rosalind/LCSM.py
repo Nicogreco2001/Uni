@@ -9,7 +9,7 @@ def find_sub_in_list(substring, list):
         return False
 
 
-f = open(r'C:\Users\nicco\Desktop\Uni\Rosalind\rosalind_lcsm.txt').read()
+f = open('Rosalind/rosalind_lcsm.txt').read()
 list = list(f.split('>'))
 n = 1
 dnaseq = []
