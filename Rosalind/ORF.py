@@ -14,7 +14,7 @@ with open('Rosalind/rosalind_orf.txt') as rosalind:
 
     my_seq = my_seq.reverse_complement()  
     n = 0
-    stop_codons = ['TAG','TGA','TAA']
+    
     while n < len(my_seq):              # do the same thing with the reverse of the DNA string
         if my_seq[n:n+3] == 'ATG':
                     seq_for_trans = my_seq[n:]
