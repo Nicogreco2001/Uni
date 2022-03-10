@@ -36,10 +36,10 @@ while n < len(dnaseq[0]):
 
 cons = ''.join(cons)
 print(cons)                  # printing of the cons seq
-print('A:', *dic['A'])       # printing of matrix
-print('C:', *dic['C'])
-print('G:', *dic['G'])
-print('T:', *dic['T'])
+#print('A:', *dic['A'])       # printing of matrix
+#print('C:', *dic['C'])
+#print('G:', *dic['G'])
+#print('T:', *dic['T'])
 
 
 
