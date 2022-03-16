@@ -1,11 +1,17 @@
 
-def fibonacci_of(n,k):
-    cache = {0: 0, 1: 1} 
-    if n in cache:       
-        return cache[n]  
-    cache[n] = fibonacci_of(n - 1) + fibonacci_of(n - 2) 
-    return cache[n]
-   
-n = int(input())
-ll = [fibonacci_of(x) for x in range(n)]
-print(*ll)
+n = 98                                                                     
+m = 19                                                                         
+def MortalFibonacci(n, m):
+    living = [1, 1]
+    for i in range(2, n):
+        # first reproduction
+        tmp = living[i - 1] + living[i - 2]
+        # then death
+        if i == m:
+            tmp = tmp - 1
+        if i > m:
+            tmp = tmp - living[i - m - 1]
+        living.append(tmp)
+    return living[-1]
+
+print(MortalFibonacci(n, m))
