@@ -7,4 +7,4 @@ for a in range(n):
         sol = False
     if len(s_2) >= len(s_1):
         sol = False
-print(sol)
+print(sol) 
